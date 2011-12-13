@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Ciptcha Demo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script src="http://cdn.ciptcha.com/ciptcha.js"></script>
+	<style>
+	.challenge-button {
+		display:inline-block;
+		width: auto;
+		height: 20px;
+		position: relative;
+		overflow: hidden;
+		background:#DCDCDC;
+		background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#DCDCDC)); /*webkit*/
+		background: -moz-linear-gradient(center top , #FAFAFA, #DCDCDC) repeat scroll 0 0 transparent;/*FF*/
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFAFAFA, endColorstr=#FFDCDCDC);/*ie5-7*/ 
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFAFAFA, endColorstr=#FFDCDCDC)"; /*ie8*/
+		margin-left: -1px;
+		font: bold 11px Arial,Helvetica,sans-serif;
+		color: #3B3B3B;
+		text-decoration: none;
+		border: 1px solid #ACACAC;
+		border-radius: 3px 3px 3px 3px; 
+		-moz-border-radius: 3px 3px 3px 3px;
+		padding: 0;
+		/* z-index: 50; */
+		cursor:pointer;
+	}
+	.challenge-button-green {
+		background:#4E7D0E;
+		background: -webkit-gradient(linear, left top, left bottom, from(#7DB72F), to(#4E7D0E)); /*webkit*/
+		background: -moz-linear-gradient(center top , #7DB72F, #4E7D0E) repeat scroll 0 0 transparent;/*FF*/
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF7DB72F, endColorstr=#FF4E7D0E);/*ie5-7*/ 
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF7DB72F, endColorstr=#FF4E7D0E)"; /*ie8*/
+		color: #FFFFFF;
+	}
+	.challenge-button-inst {
+		overflow: hidden;
+		white-space: nowrap;
+		line-height: 20px;
+		text-decoration: none;
+		outline: medium none;
+		padding: 1px 10px 1px 2px;
+		margin: 2px 20px 2px 8px;
+		border-right:1px solid #ACACAC;
+	}
+
+	.challenge-button-icon {
+		background: transparent url('arrows.png') no-repeat scroll -10px -136px;
+		height: 4px;
+		width: 7px;
+		margin-top: -2px;
+		position: absolute;
+		right: 7px;
+		top: 50%;
+	}
+	</style>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#clickme1').ciptcha({apikey:'',showcloselink: true,displaytype:'inpage'});
+		$('#clickme8').ciptcha({iconset:'5',displaytype:'inpage',showcloselink: true,picwidth:65,picrows:1,piccols:10,closeLinked:'CLOSE',mouseOutClick:false,stepnums:true});
+		$('#clickmeX').ciptcha({displaytype:'popout'});
+		$('#c7').ciptcha({displaytype:'modal'});
+		$('#c8').ciptcha({displaytype:'popout'});
+		$('#c9').ciptcha({displaytype:'modal',autoScale:true});
+		$('#c10').ciptcha({displaytype:'modal',autoScale:true,dropShadowSize:56,picwidth:55,closeLinked:'SCHLIESSEN',showProgressbar:false,overlayColor:'red'});
+		$('#c11').ciptcha({clang:'us',displaytype:'modal',fx:{open:'fadeIn'}});
+		$('#c12').ciptcha({displaytype:'modal',autoScale:true,fx:{open:'fadeIn',openSpeed:'3200'},showTitle:true,LANG:{click:'KLICKE',back:'ZURUCK',reload:'NEU LADA',thanks:'YEAH'}});
+		$('#c13').ciptcha({iconset:'25',clang:'us',displaytype:'modal',fx:{open:'fadeIn'}});
+		$('#c14').ciptcha({iconset:'3',clang:'us',displaytype:'modal',fx:{open:'fadeIn'}});
+		$('#c15').ciptcha({iconset:'7',clang:'us',displaytype:'modal',fx:{open:'fadeIn'}});
+	});
+	</script>
+</head>
+<body style="background:#FFFFFF;">
+<h1><center>Ciptcha Demo</center></h1>
+<br>
+<br>standard inpage
+<br>	
+<div id="clickme1" href="#" title=""><b>Click me right here.</b></div>
+
+<br>
+<br>
+Inpage different Layout
+<br>	
+<div id="clickme8" href="#" rel="#" title=""><b>CLICK HERE! - clickme8</b></div>
+<br>
+<br>
+standard popout
+<br>	
+
+
+<div id="clickmeX" title="hiii"><b>POPOUT CLICK HERE</b></div>
+
+
+<br>
+<br>	
+
+
+
+<span id="c7" class="challenge-button">
+	<span class="challenge-button-inst">Demo Ciptcha4</span>
+	<span class="challenge-button-icon"></span>
+</span>
+
+<br>
+<br>
+
+<span id="c8" class="challenge-button">
+	<span class="challenge-button-inst">Demo Ciptcha5</span>
+	<span class="challenge-button-icon"></span>
+</span>
+
+<br>
+<br>
+
+<span id="c9" class="challenge-button">
+	<span class="challenge-button-inst">Demo Ciptcha6</span>
+	<span class="challenge-button-icon"></span>
+</span>
+
+<br>
+<br>
+
+<span id="c10" class="challenge-button">
+	<span class="challenge-button-inst">Demo Ciptcha7</span>
+	<span class="challenge-button-icon"></span>
+</span>
+
+<br>
+<br>
+
+<span id="c11" class="challenge-button" >
+	<span class="challenge-button-inst">Demo Ciptcha8</span>
+	<span class="challenge-button-icon"></span>
+</span>
+
+<br>
+<br>
+
+<span id="c12" class="challenge-button" title="Verification">
+	<span class="challenge-button-inst">Demo Ciptcha9</span>
+	<span class="challenge-button-icon"></span>
+</span>
+
+<br>
+<br>
+
+<span id="c13" class="challenge-button" >
+	<span class="challenge-button-inst">Demo Ciptcha10</span>
+	<span class="challenge-button-icon"></span>
+</span>
+
+<br>
+<br>
+
+<span id="c14" class="challenge-button" >
+	<span class="challenge-button-inst">Demo Ciptcha11</span>
+	<span class="challenge-button-icon"></span>
+</span>
+
+<br>
+<br>
+
+<span id="c15" class="challenge-button" >
+	<span class="challenge-button-inst">Demo Ciptcha12</span>
+	<span class="challenge-button-icon"></span>
+</span>
+</body>
+
+</html>
