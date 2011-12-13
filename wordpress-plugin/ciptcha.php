@@ -163,7 +163,7 @@ function cptch_plugin_action_links( $links, $file ) {
 	if ( ! $this_plugin ) $this_plugin = plugin_basename(__FILE__);
 
 	if ( $file == $this_plugin ){
-			 $settings_link = '<a href="admin.php?page=ciptcha.php">' . __( 'Settings', 'captcha' ) . '</a>';
+			 $settings_link = '<a href="admin.php?page=captcha.php">' . __( 'Settings', 'captcha' ) . '</a>';
 			 array_unshift( $links, $settings_link );
 		}
 	return $links;
@@ -172,7 +172,7 @@ function cptch_plugin_action_links( $links, $file ) {
 function cptch_register_plugin_links($links, $file) {
 	$base = plugin_basename(__FILE__);
 	if ($file == $base) {
-		$links[] = '<a href="admin.php?page=ciptcha.php">' . __( 'Settings', 'captcha' ) . '</a>';
+		$links[] = '<a href="admin.php?page=captcha.php">' . __( 'Settings', 'captcha' ) . '</a>';
 	}
 	return $links;
 }
