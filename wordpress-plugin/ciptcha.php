@@ -506,8 +506,6 @@ $('#c12').ciptcha({
 	displaytype:'modal',
 	autoScale:true,
 	fx:{open:'fadeIn',openSpeed:'3200'},
-	showTitle:false,
-	LANG:{click:'KLICKE',back:'ZURUCK',reload:'NEU LADA',thanks:'Wurstfinger'}
 });
 
 $.fn.onsuccesschallenge = function() {
