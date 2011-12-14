@@ -51,6 +51,8 @@ function ciptcha_checkcode($cip_key='',$cip_code='') {
 
 	if(!$cip_key){return "Error: No Key.";}
 	if(!$cip_code){ return "Error: No Code.";}
+	if(!$cip_apikey){ return "Error: Api-Key. Please register.";}
+
 
 	$cip_params = "&key=".urlencode($cip_key)."&code=".urlencode($cip_code)."&apikey=".urlencode($cip_apikey);
 	$cip_result = ciptcha_getdata('checkcode.php', $cip_params);
